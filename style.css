@@ -1,0 +1,67 @@
+body {
+  background-image: linear-gradient(#360d66, #5f4da8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #d6d6ea;
+}
+
+.container-aplicativo {
+  border-radius: 15px;
+  padding: 25px;
+  background-color: #8f80cc; 
+  /*caso decida criar um fundo*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.2);
+  transition: 0.3s all;
+  filter: invert(0.5);
+}
+button:not(:hover){
+  transform: scale(1.0);
+  transition: 0.3s all;
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#informacoes-faixa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+#capitulo, #autor {
+  font-family: 'Exo 2';
+}
+
+#anterior, #seguinte {
+  font-size: 3rem;
+}
+
+#play-pause {
+  font-size: 4rem;
+}
+
+#container-botoes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
